@@ -1,14 +1,35 @@
 body {
   background:url('../images/retreat.png') no-repeat center center fixed;
   background-size: cover;
+
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  color: white;
 }
 
 #shade {
   position: fixed;
-  z-index: 1;
+  z-index: -1;
   background: rgba(0, 0, 0, 0.4);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+#signup input {
+  background: none;
+  border: none;
+  border-bottom: solid 2px white;
+  outline: none;
+  font-size: 19px;
+  width: 13em;
+  text-align: center;
+  line-height: 1.7;
+  border-radius: 0;
+  -webkit-appearance: none;
+  text-shadow: 0 1px 0 black;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
 }
