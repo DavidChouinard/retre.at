@@ -2,7 +2,7 @@ body {
   background:url('../images/retreat.png') no-repeat center center fixed;
   background-size: cover;
 
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "proxima-nova",sans-serif;
   text-align: center;
   color: white;
 }
@@ -11,7 +11,7 @@ p {
   color: white;
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 h1 {
