@@ -31,6 +31,9 @@ h1 {
   bottom: 0;
 }
 
+#signup {
+  display: block;
+}
 #signup input {
   background: none;
   border: none;
