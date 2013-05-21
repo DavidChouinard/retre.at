@@ -16,7 +16,10 @@ p {
   color: white;
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 h1 {
@@ -24,6 +27,9 @@ h1 {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
   font-weight: 900;
+  font-size: 55px;
+  padding-top: 110px;
+  padding-bottom: 9px;
 }
 
 #shade {
@@ -45,7 +51,6 @@ h1 {
   border-bottom: solid 2px white;
   outline: none;
   font-size: 19px;
-  width: 13em;
   text-align: center;
   line-height: 1.7;
   border-radius: 0;
@@ -62,4 +67,29 @@ footer {
   bottom: 0;
   height: 30px;
   width: 100%;
+}
+#date {
+  padding-top: 62px;
+}
+
+#sub {
+  padding-top: 5px;
+}
+
+.icons::before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  margin-right: 0.8em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* button icons*/
+
+#love::before {
+  padding-top: 2px;
+  content: '\2665';
+  font-size: 16px;
+  color: red;
 }
