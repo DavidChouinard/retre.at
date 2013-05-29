@@ -8,35 +8,29 @@ http://buildingfindablewebsites.com
 Distrbuted under Creative Commons license
 http://creativecommons.org/licenses/by-sa/3.0/us/
 ///////////////////////////////////////////////////////////////////////*/
-
-
-function storeAddress(){
 	
-	// Validation
-	if(!$_GET['email']){ return "No email address provided"; } 
+// Validation
+if(!$_GET['email']){ return "No email address provided"; } 
 
-	if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*$/i", $_GET['email'])) {
-		return "Email address is invalid"; 
-	}
-
-	require_once('MCAPI.class.php');
-	// grab an API Key from http://admin.mailchimp.com/account/api/
-	$api = new MCAPI('0c8e66209155649380f5974edc69a413-us4');
-	
-	// grab your List's Unique Id by going to http://admin.mailchimp.com/lists/
-	// Click the "settings" link for the list - the Unique Id is at the bottom of that page. 
-	$list_id = "e652689d9b";
-
-	if($api->listSubscribe($list_id, $_GET['email'], '') === true) {
-		// It worked!	
-		return 'Success! Check your email to confirm sign up.';
-	}else{
-		// An error ocurred, return error message	
-		return 'Error: ' . $api->errorMessage;
-	}
-	
+if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*$/i", $_GET['email'])) {
+	print "Email address is invalid";
+	exit();
 }
 
-// If being called via ajax, autorun the function
-if($_GET['ajax']){ echo storeAddress(); }
+require_once('MCAPI.class.php');
+// grab an API Key from http://admin.mailchimp.com/account/api/
+$api = new MCAPI('0c8e66209155649380f5974edc69a413-us4');
+
+// grab your List's Unique Id by going to http://admin.mailchimp.com/lists/
+// Click the "settings" link for the list - the Unique Id is at the bottom of that page. 
+$list_id = "e652689d9b";
+
+if($api->listSubscribe($list_id, $_GET['email'], '') === true) {
+	// It worked!	
+	print 'Success! Check your email to confirm sign up.';
+} else{
+	// An error ocurred, return error message	
+	print 'Error: ' . $api->errorMessage;
+}
+	
 ?>

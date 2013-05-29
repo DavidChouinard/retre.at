@@ -4,16 +4,15 @@ $(document).ready(function() {
     e.preventDefault();
 
     var data = $(this).serialize();
-
-    $(this).fadeOut(function() {
-      $(this).text("Adding your email address...").fadeIn();
-    });
+    var self = this;
 
     $.ajax({
       url: '/ajax/store-address.php',
       data: data,
       success: function(msg) {
-        $(this).html(msg);
+        $(self).fadeOut(function() {
+          $(self).text(msg).fadeIn();;
+        });
       }
     });
   });
