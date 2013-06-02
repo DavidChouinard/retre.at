@@ -42,8 +42,9 @@ h1 {
   bottom: 0;
 }
 
-#signup {
+#signup > * {
   display: block;
+  margin: 0 auto;
 }
 #signup input {
   font-family: "proxima-nova", sans-serif;
