@@ -51,7 +51,7 @@ h1 {
   background: none;
   border: none;
   border-bottom: solid 1px white;
-  padding: 0 3px 1px 3px;
+  padding: 0 1px 1px 1px;
   outline: none;
   font-size: 15px;
   font-weight: 300;
@@ -69,7 +69,7 @@ h1 {
 }
 #signup button {
   background: grey;
-  width: 110px;
+  width: 118px;
   height: 34px;
   font-size: 13px;
   text-decoration: none;
@@ -79,11 +79,11 @@ h1 {
   margin: 25px auto 0;
   padding: 1px 0 0;
   color: #fafafa;
-  background: rgba(0, 0, 0, 0.69);
+  background: rgba(140, 140, 140, 0.69);
 }
 
 #signup button:hover {
-  background: rgba(160, 160, 160, 0.69);
+  background: rgba(180, 180, 180, 0.69);
 }
 
 #signup input:focus {
