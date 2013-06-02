@@ -4,15 +4,9 @@
   "css_use_suffix": false,
   "glyphs": [
     {
-      "search": [
-        "heart"
-      ],
-      "code": 9829,
-      "from": 9829,
       "uid": "hi76m8qggwn5lbl286oeqp64q0n8kusy",
       "css": "heart",
-      "orig_css": "heart",
-      "orig_code": 9829,
+      "code": 59392,
       "src": "typicons"
     }
   ]

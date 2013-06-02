@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width">
 
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/fontello/css/fontello.css">
       <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
   </head>
   <body>
@@ -19,7 +20,7 @@
       <p id="date">coming spring 2014</p>
 
       <form action="/ajax/store-address.php" method="POST" id="signup">
-        <input type="email" placeholder="you@example.com" name="email"/>
+        <input autocapitalize="off" type="email" value="name@domain.com" onfocus="this.value=''" name="email"/>
       </form>
 
       <footer>Made with <span id="love"> in Montreal</footer>
