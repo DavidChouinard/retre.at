@@ -4,12 +4,28 @@ html {
 }
 
 body {
-  background:url('../images/blur.jpg') no-repeat center center fixed;
+  /*background:url('../images/retreat.png') no-repeat center center fixed;*/
+  background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
+
   background-size: cover;
   font-family: "proxima-nova",sans-serif;
   text-align: center;
   color: white;
   margin: 0 0 36px;
+  z-index: 400;
+}
+
+body:after {
+content: '';
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: url('../images/map.jpg') no-repeat center center fixed;
+opacity: .07;
+z-index: -1;
 }
 
 p {
