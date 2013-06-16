@@ -4,10 +4,16 @@
   "css_use_suffix": false,
   "glyphs": [
     {
-      "uid": "hi76m8qggwn5lbl286oeqp64q0n8kusy",
-      "css": "heart",
+      "uid": "db112402805d9dadc01ce009fbfdb914",
+      "css": "paper-plane",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "628e5fc59fc5965a6b91189467b037d5",
+      "css": "heart-1",
       "code": 59392,
-      "src": "typicons"
+      "src": "elusive"
     }
   ]
 }

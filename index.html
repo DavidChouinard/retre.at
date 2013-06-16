@@ -10,6 +10,7 @@
 
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/fontello/css/fontello.css">
+      <link rel="stylesheet" href="css/fontello3/css/fontello.css">
       <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
   </head>
   <body>
@@ -17,13 +18,15 @@
       <h1>RETREAT</h1>
       <p>A week long creative retreat for the web's finest makers, shakers and doers.</p> 
       <p id="sub">Part conference. Part festival. All fun.</p>
-      <p id="date">Coming spring 2014</p>
+      <p id="date">Coming spring 2014. Montreal, Canada.</p>
 
-      <form action="/ajax/store-address.php" method="POST" id="signup">
-        <input autocapitalize="off" type="email" value="name@domain.com" onfocus="this.value=''" name="email"/>
-        <button type="submit">Subscribe</button>
-      </form>
-
+      <div class="subscribe">
+        <form action="/ajax/store-address.php" method="POST" id="signup">
+        <span id="fly"></span>
+          <input autocapitalize="off" type="email" value="name@domain.com" onfocus="this.value=''" name="email"/>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
       <footer>Made with <span id="love"> in Montreal</footer>
 
       <div id="shade"></div>
