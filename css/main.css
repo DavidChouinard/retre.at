@@ -266,7 +266,7 @@ font-family: "proxima-nova", sans-serif;
 
 footer {
   font-family: "kepler-std",serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 500;
   position: absolute;
   left: 0;
@@ -279,7 +279,7 @@ footer {
 }
 
 a:-webkit-any-link {
-  color: rgba(4, 30, 83, 0.45) !important;
+  color: rgba(4, 30, 83, 0.55) !important;
   text-decoration: none !important;
   text-align: center
   margin: 0 auto;
