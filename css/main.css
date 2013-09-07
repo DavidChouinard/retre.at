@@ -13,9 +13,9 @@ h1 {
 
 #what {
   font-size: 17px !important;
-  letter-spacing: 0.19em !important;
+  letter-spacing: 0.17em !important;
   padding-bottom: 22px !important;
-  max-width: 345px !important;
+  max-width: 320px !important;
 }
 
 #when {
@@ -26,11 +26,11 @@ h1 {
 
 #ready1 {
   padding: 38px 17px 12px 17px !important;
-  line-height: 175% !important;
   font-size: 21px !important;
   padding-bottom: 19px !important;
   padding-right: 25px !important;
   padding-left: 25px !important;
+  line-height: 120% !important;
 }
 
 #ready2 {
@@ -38,7 +38,7 @@ h1 {
 }
 
 #signup input {
-  max-width: 192px !important;
+  max-width: 160px !important;
 }
 
 
@@ -215,9 +215,10 @@ font-family: "proxima-nova", sans-serif;
 
 #signup input {
   font-family: "proxima-nova", sans-serif;
-  background: none;
+  background: none; /*url('../images/send.png') no-repeat left bottom;*/
+  background-size: 47px 46px;
   border: 2px solid #f1594e;
-  border-radius: 0px;
+  border-radius: 0;
   padding: 9px 15px 9px 15px;
   outline: none;
   font-size: 15px;
@@ -247,7 +248,7 @@ font-family: "proxima-nova", sans-serif;
   margin: 20px auto 0;
   margin: 1px 0px 1px 6px;
   padding: 14px 15px 14px 15px;
-  border-radius: 0px;
+  border-radius: 0;
   text-align: center;
   color: white;
   background: #f1594e;
@@ -276,17 +277,29 @@ footer {
   font-size: 12px;
   text-align: center
   margin: 0 auto;
+  color: rgba(4, 30, 83, 0.55) !important;
+  text-decoration: none !important;
+  text-decoration: -moz-none;
 }
 
 a:-webkit-any-link {
+  
   color: rgba(4, 30, 83, 0.55) !important;
   text-decoration: none !important;
+  text-decoration: -moz-none;
   text-align: center
   margin: 0 auto;
 }
 
 #social {
   padding-left: 11px;
+  text-decoration: none !important; /* for moz*/
+  color: rgba(4, 30, 83, 0.55) !important;
+}
+
+#mail {
+  text-decoration: none !important; /*for moz*/
+  color: rgba(4, 30, 83, 0.55) !important;
 }
 
 footer {
