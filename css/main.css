@@ -3,52 +3,191 @@ html {
   min-height: 100%;
 }
 
+/* Landscape phones and down */
+@media (max-width: 539px) {
+
+h1 {
+  font-size: 52px !important;
+  padding-top: 3px !important;
+}
+
+#what {
+  font-size: 17px !important;
+  letter-spacing: 0.19em !important;
+  padding-bottom: 22px !important;
+  max-width: 345px !important;
+}
+
+#when {
+  font-size: 30px !important;
+  max-width: 190px !important;
+  padding-top: 16px !important;
+}
+
+#ready1 {
+  padding: 38px 17px 12px 17px !important;
+  line-height: 175% !important;
+  font-size: 21px !important;
+  padding-bottom: 19px !important;
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+}
+
+#ready2 {
+  font-size: 19px !important;
+}
+
+#signup input {
+  max-width: 192px !important;
+}
+
+
+
+}
+
 body {
   /*background:url('../images/retreat.png') no-repeat center center fixed;*/
-  background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
-
-  background-size: cover;
+  /*background: linear-gradient(45deg, #020031 0%,#6d3353 100%);*/
+  /*background-size: cover;*/
   font-family: "proxima-nova",sans-serif;
   text-align: center;
   color: white;
   margin: 0 0 36px;
   z-index: 400;
+  background-color: #f4f0e9;
 }
 
-body:after {
-content: '';
-display: block;
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-background: url('../images/map2.jpg') no-repeat center center fixed;
-opacity: .06;
-z-index: -1;
+.top  {
+    /*background: -webkit-linear-gradient(45deg, #020031 0%,#6D3353 100%); old background gradient */
+    
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(bottom left, #02153B 20%, #3262B1 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom left, #02153B 20%, #3262B1 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom left, #02153B 20%, #3262B1 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0.2, #02153B), color-stop(1, #3262B1));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom left, #02153B 20%, #3262B1 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to top right, #02153B 20%, #3262B1 100%);
+    
+    position: relative;
+    padding: 3.5%;
+    z-index: 400;
+}
+
+.top:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url('../images/map4.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity: 0.1;
+        z-index: -1;
+    }
+
+h1 {
+  color: white;
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .15em;
+  font-size: 54px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 8px;
+  /*max-width: 280px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.56);*/
+  text-rendering: optimizeLegibility;
 }
 
 p {
   color: white;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "kepler-std",serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin: 0;
+  text-rendering: geometricPrecision;
 }
 
-h1 {
-  color: white;
+#edition{
+  padding-top: 60px;
+  padding-bottom: 1px;
+  font-weight: 600;
+}
+
+#what {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  max-width: 530px;
+  margin: 0 auto;
+  line-height: 150%;
+  padding-bottom: 23px;
+}
+
+#when {
+  font-family: "kepler-std",serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 31px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.56);
+  max-width: 262px;
+  letter-spacing: 0.04em;
+}
+
+#where {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 56px;
+}
+
+#ready1 {
+  padding: 48px 17px 12px 17px;
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
-  font-weight: 900;
-  font-size: 55px;
-  padding-top: 95px;
-  padding-bottom: 9px;
+  font-weight: 700;
+  color: #f1594e;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
 }
 
-#shade {
+#ready2 {
+  padding: 3px 17px 22px 17px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "kepler-std",sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #041E53;
+  font-size: 21px;
+  text-transform: none;
+}
+
+/*#shade {
   position: fixed;
   z-index: -1;
   background: rgba(0, 0, 0, 0.25);
@@ -56,81 +195,79 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-}
+}*/
 
 #signup > * {
   /*display: block;*/
   margin: 0 auto;
 }
+
+.newsletter{
+max-width: 700px;
+margin: 0 auto;
+font-family: "proxima-nova", sans-serif;
+/*padding: 5%;*/
+}
+
 #signup input {
   font-family: "proxima-nova", sans-serif;
   background: none;
-  border: none;
-  /*border-bottom: solid 1px white;*/
-  padding: 0 1px 1px 1px;
+  border: 2px solid #f1594e;
+  border-radius: 0px;
+  padding: 9px 15px 9px 15px;
   outline: none;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   line-height: 1.7;
-  border-radius: 0;
+  width: 202px;
   -webkit-appearance: none;
   /*text-shadow: 0 1px 0 black;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);*/
   cursor: pointer;
-  color: #fafafa;
-  width: 168px;
-  padding-left: 13px;
+  color: #f1594e;
 }
 
 #signup input:focus {
-  text-align: left;
+  text-align: left !important;
+  background: white !important;
 }
 
-.subscribe {
+#signup button {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 20px auto 0;
+  margin: 1px 0px 1px 6px;
+  padding: 14px 15px 14px 15px;
+  border-radius: 0px;
+  text-align: center;
+  color: white;
+  background: #f1594e;
+  border: 0;
+}
+
+#signup button:hover{
+  background: #E24338 !important;
+}
+
+#signup button:active{
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.23), 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.23), 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.23), 0 1px 2px rgba(0, 0, 0, 0) !important;
+}
+
+/*.subscribe {
   background: rgba(250, 250, 250, 0.27);
   border-radius: 46px;
-  /*border: 2px solid #111111;*/
+  border: 2px solid #111111;
   width: 279px;
   margin: 0 auto;
   border: 5px solid rgba(0, 0, 0, 0.29);
 }
-
-
-#signup button {
-  background: grey;
-  width: 90px;
-  height: 34px;
-  font-size: 14px;
-  text-decoration: none;
-  /*-webkit-border-radius: 4px;
-  border-radius: 4px;*/
-  /*-webkit-border-radius: 46px;
-  border-radius: 46px;*/
-  border-top-right-radius:46px;
-  border-bottom-right-radius:46px;
-  border: 0;
-  /*margin: 20px auto 0;*/
-  margin: 1px 0px 1px 1px;
-  padding: 1px 0 0;
-  color: #020031;
-  background: rgba(180, 180, 180, 0.69);
-  font-family: "proxima-nova";
-}
-
-#signup button:hover {
-  background: rgba(255, 255, 255, 0.59);
-  /*background: rgba(140, 140, 140, 0.69);*/
-}
-
-#signup input:focus {
-
-color: white !important;
-/*border-bottom: solid 1px #cccccc !important;*/
-}
-
 
 footer {
   position: absolute;
@@ -139,9 +276,11 @@ footer {
   height: 36px;
   width: 100%;
   font-size: 13px;
+  color: #fd6e6e;
 }
+
 #date {
-  padding: 59px 0 70px 0;
+  padding: 49px 0 40px 0;
   font-size: 18px;
 }
 
@@ -158,23 +297,23 @@ footer {
   display: inline-block;
 }
 
-/* button icons*/
-
 #love::before {
   padding-top: 2px;
   content: '\2665';
   font-size: 11px;
-  color: white;
+  color: #fd6e6e;
 }
 
-/*#fly::before {
+#fly::before {
   padding-top: 2px;
   content: '\801';
   font-size: 20px;
   color: white;
-}*/
+}
 
 footer {
   margin-top: 75px;
 }
+
+*/
 
