@@ -10,10 +10,10 @@ http://creativecommons.org/licenses/by-sa/3.0/us/
 ///////////////////////////////////////////////////////////////////////*/
 	
 // Validation
-if(!$_GET['email']){ return "No email address provided"; } 
+if(!$_GET['email']){ return '<div class="error">No email address provided</div>'; }
 
 if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*$/i", $_GET['email'])) {
-	print "Email address is invalid";
+	print '<div class="error">Email address is invalid</div>';
 	exit();
 }
 
@@ -27,10 +27,12 @@ $list_id = "e652689d9b";
 
 if($api->listSubscribe($list_id, $_GET['email'], '') === true) {
 	// It worked!	
-	print 'Success! Check your email to confirm sign up.';
-} else{
-	// An error ocurred, return error message	
-	print 'Error: ' . $api->errorMessage;
+	print '<div class="success">Success! Check your email to confirm sign up.</div>';
+} elseif ($api->errorCode == 214) {
+	print '<div class="error">Your email\'s already on the list! We\'re working hard and we\'ll be in touch soon.</div>';
+} else {
+	// Catch all error
+	print '<div class="error">Error: ' . $api->errorMessage . '</div>';
 }
 	
 ?>

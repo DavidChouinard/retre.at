@@ -11,7 +11,7 @@ $(document).ready(function() {
       data: data,
       success: function(msg) {
         $(self).fadeOut(function() {
-          $(self).text(msg).fadeIn();;
+          $(self).html(msg).fadeIn();;
         });
       }
     });
