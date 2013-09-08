@@ -11,6 +11,10 @@ h1 {
   padding-top: 3px !important;
 }
 
+.top:after {
+        background: url('../images/mobilemap.jpg') no-repeat center center !important;
+}
+
 #what {
   font-size: 17px !important;
   letter-spacing: 0.17em !important;
