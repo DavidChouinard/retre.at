@@ -44,7 +44,7 @@ h1 {
 
 /* 15" Pro */
 
-@media (min-width: 1670px) and (max-width: 1699px) > {
+@media (min-width: 1650px) and (max-width: 1699px) {
 
 #edition{
   padding-top: 73px !important;
@@ -57,7 +57,7 @@ h1 {
 
 /* 13" Retina */
 
-@media (min-resolution: 220dpi) and (min-height: 1595px) > {
+@media (min-resolution: 220dpi) and (min-height: 1595px) {
 
 #edition{
   padding-top: 78px !important;
@@ -70,7 +70,7 @@ h1 {
 
 /* 15" Retina */
 
-@media (min-resolution: 200dpi) and (min-height: 1700px) > {
+@media (min-resolution: 200dpi) and (min-height: 1700px) {
 
 #edition{
   padding-top: 88px !important;
@@ -82,7 +82,7 @@ h1 {
 }
 
 /* Large ass screens - Imac + cinema display */
-@media (min-width: 2050px) and (max-resolution: 190dpi){
+@media (min-width: 2050px) and (max-resolution: 190dpi) {
 
 #edition{
   padding-top: 188px !important;
