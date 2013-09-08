@@ -42,9 +42,9 @@ h1 {
 }
 }
 
-/* 15" Pro */
+/* 15" high rez Pro */
 
-@media (min-width: 1650px) and (max-width: 1699px) {
+@media (min-width: 1600px) and (max-width: 1699px) {
 
 #edition{
   padding-top: 73px !important;
