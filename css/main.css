@@ -44,6 +44,10 @@ h1 {
 #signup input {
   max-width: 160px !important;
 }
+
+#signup button {
+  margin: 1px 0px 1px 3px !important;
+}
 }
 
 /* 15" high rez Pro */
