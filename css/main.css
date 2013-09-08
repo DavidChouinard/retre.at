@@ -40,9 +40,57 @@ h1 {
 #signup input {
   max-width: 160px !important;
 }
+}
 
+/* 15" Pro */
 
+@media (min-width: 1670px) and (max-width: 1699px) > {
 
+#edition{
+  padding-top: 73px !important;
+}
+  
+#where {
+  padding-bottom: 66px !important;
+} 
+}
+
+/* 13" Retina */
+
+@media (min-resolution: 220dpi) and (min-height: 1595px) > {
+
+#edition{
+  padding-top: 78px !important;
+}
+  
+#where {
+  padding-bottom: 66px !important;
+} 
+}
+
+/* 15" Retina */
+
+@media (min-resolution: 200dpi) and (min-height: 1700px) > {
+
+#edition{
+  padding-top: 88px !important;
+}
+  
+#where {
+  padding-bottom: 76px !important;
+} 
+}
+
+/* Large ass screens - Imac + cinema display */
+@media (min-width: 2050px) and (max-resolution: 190dpi){
+
+#edition{
+  padding-top: 188px !important;
+}
+  
+#where {
+  padding-bottom: 176px !important;
+}
 }
 
 body {
@@ -124,7 +172,7 @@ p {
 }
 
 #edition{
-  padding-top: 60px;
+  padding-top: 61px;
   padding-bottom: 1px;
   font-weight: 600;
 }
@@ -164,7 +212,7 @@ p {
   text-transform: uppercase;
   margin: 0 auto;
   padding-top: 8px;
-  padding-bottom: 56px;
+  padding-bottom: 57px;
 }
 
 #ready1 {
